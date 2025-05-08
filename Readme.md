@@ -12,9 +12,7 @@ Python es un lenguaje de programación muy popular por su sencillez y versatilid
    ```bash
    python nombre_del_archivo.py
 
-## Ejemplos Sencillos:
-
-    1. **Como Crear Un Codigo Sencillo**            
+## Como Crear Un Codigo Sencillo            
 
         num1 = 10
         num2 = 25
@@ -33,17 +31,14 @@ Python es un lenguaje de programación muy popular por su sencillez y versatilid
             print(f"El número mayor es: {mayor}")
 
 
-
-## Ejemplos Sencillos:
-
-    2. **Como Crear Una Procedimiento de saludo Sencilla**   
+## Como Crear Una Procedimiento de Saludo Sencillo
 
         def saludar(nombre):
             print(f"¡Hola, {nombre}!")
 
         saludar("Ana")
 
-    3. **Como Crear Una Función de suma Sencilla** 
+## Como Crear Una Función de suma Sencilla 
      
         def sumar(a, b):
             return a + b
@@ -51,7 +46,7 @@ Python es un lenguaje de programación muy popular por su sencillez y versatilid
         resultado = sumar(5, 3)
         print("La suma es:", resultado)
 
-    4. **Función para saber si un número es par o impar** 
+## Función para saber si un número es par o impar
         
         def es_par(numero):
             if numero % 2 == 0:
@@ -62,9 +57,12 @@ Python es un lenguaje de programación muy popular por su sencillez y versatilid
         es_par(8)
         es_par(13)
 
-    5. **Función para calcular el área de un círculo**
+## Función para calcular el área de un círculo
+
         def area_circulo(radio):
             pi = 3.1416
             return pi * radio * radio
 
         print("Área de un círculo de radio 4:", area_circulo(4))
+
+---
