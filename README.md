@@ -1,5 +1,5 @@
-## o crear un nuevo repositorio en la línea de comandos: ## 
-## echo "# Politecnico_Mns_Arg_Python" >> README.md
+## Crear un nuevo repositorio en la línea de comandos: ## 
+## Politecnico_Mns_Arg_Python" >> README.md
 
 -> git init
 
