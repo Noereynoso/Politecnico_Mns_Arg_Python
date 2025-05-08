@@ -1,5 +1,3 @@
-#Ingrese tres numeros verifiquemos cual es mayor
-
 num1 = int(input("Ingrese el primer numero: "))
 num2 = int(input("Ingrese el segundo numero: "))
 num3 = int(input("Ingrese el tercer numero: "))
@@ -22,5 +20,4 @@ print(f" el numero mayor es:{mayor}")
 #    print("El numero mayor es:", num1)
 #else:
 #    print("Los numeros son iguales")
-
 
