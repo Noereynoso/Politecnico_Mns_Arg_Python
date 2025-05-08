@@ -1,21 +1,22 @@
-o crear un nuevo repositorio en la línea de comandos:
-echo "# Politecnico_Mns_Arg_Python" >> README.md
+## o crear un nuevo repositorio en la línea de comandos: ## 
+## echo "# Politecnico_Mns_Arg_Python" >> README.md
 
-°git init
+-> git init
 
-°git añadir README.md
+-> git añadir README.md
 
-°git commit -m "primera confirmación"
+-> git commit -m "primera confirmación"
 
-°git rama -M principal
+-> git rama -M principal
 
-°git remote add origin 
+-> git remote add origin https://github.com/Noereynoso/Politecnico_Mns_Arg_Python.git
 
-°git push -u origen principal
+-> git push -u origen principal
 
-o insertar un repositorio existente desde la línea de comandos:
-°git remote add origin 
+ ## insertar un repositorio existente desde la línea de comandos: ""
 
-°git rama -M principal
+-> git remote add origin https://github.com/Noereynoso/Politecnico_Mns_Arg_Python.git
 
-°git push -u origen principal
+-> git rama -M principal
+
+-> git push -u origen principal
