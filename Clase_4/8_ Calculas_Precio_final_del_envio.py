@@ -6,7 +6,7 @@
 #Se necesita realizar un algoritmo para saber el precio final a pagar. 
 #En la siguiente tabla se muestran los destinos con cada peso admitido y su #precio correspondiente.
 
-# Mostrar opciones de provincias.
+        # Mostrar opciones de provincias.
 print("1. Santa Cruz")
 print("2. Chubut")
 print("3. Rio Negro")
@@ -76,9 +76,13 @@ elif Provincia_de_Envio == 3:
             Precio = None
 
 # Mostrar el resultado
-if Precio is not None:
+if Precio is not None: # El is not none se refiere
+    print()
     print(f"El precio total de pedido es: ${Precio:.2f}")
+    print()
     print("Si necesita hacer un otro envio selecciona de nuevo la provincia y el peso.")
+
 else:
-    print("El peso del pedido no es valido para esta provincia. Intente de nuevo.")
+    print("Coloca un peso, o el peso del pedido no es valido para esta provincia. Intente de nuevo.")
+
     

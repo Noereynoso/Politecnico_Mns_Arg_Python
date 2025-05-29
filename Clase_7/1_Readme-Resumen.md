@@ -44,7 +44,6 @@
     Multiple:
 **Condicional múltiple (if-elif-else): Evalúa varias condiciones en orden hasta encontrar la primera verdadera.**
 3. Link:
-🔗
 
 🔗 Funciones: https://ellibrodepython.com/funciones-python
 
