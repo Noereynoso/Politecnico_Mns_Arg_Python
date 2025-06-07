@@ -55,3 +55,23 @@
 - **Luego repite el git push.**
     ```bash 
     git push
+
+## Soluciones a problemas en git
+-   Para eliminar todos los commits de un repositorio Git y empezar desde cero (manteniendo los archivos actuales), puedes hacer lo siguiente:
+
+-   1.**Borra el historial de commits y crea uno nuevo:**
+    ```bash
+        git checkout --orphan nueva-rama
+        git add .
+        git commit -m "Commit inicial"
+
+-   2.**Borra la rama principal y renómbrala:**
+    ```bash
+        git branch -D main
+        git branch -m main
+
+-   3.**Fuerza el push al repositorio remoto (esto sobrescribirá el historial remoto):**
+    ```bash
+        git push -f origin main
+
+# Advertencia: Esto eliminará todo el historial anterior. Úsalo solo si estás seguro. Haz un respaldo antes si es necesario.
