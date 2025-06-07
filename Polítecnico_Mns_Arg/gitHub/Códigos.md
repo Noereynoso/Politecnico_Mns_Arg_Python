@@ -17,10 +17,13 @@ Este instructivo te guía paso a paso para conectar tu carpeta local con el repo
 - **3️⃣ Agrega tus archivos al área de preparación**
     ```bash
     git add .
-4️⃣ Haz tu primer commit
-git commit -m "Primer commit"
+- **4️⃣ Haz tu primer commit
+    ```bash
+    git commit -m "Primer commit"
 
-git branch -M main
+- **5️⃣ haz tu que tu rama sea main o master
+    ```bash
+    git branch -M main
 
 - **5️⃣ Conecta tu carpeta local con el repositorio de GitHub**
     ```bash
