@@ -1,0 +1,27 @@
+#diferencias conexion ordenada imutable (no podesmos ordenar ni borrar)
+# tuplas son inmutables y se usan para seguridad como cordenadas con un volumen de datos para usar y son mas rapidads
+# se usan para funciones para almacenar tambien.
+
+# UN DICCIONARIO se usa mucho se usa para pasar datos, se utiliza para tomar datos de forma temporal para estrucoturas mas sencilllas, para guardar informacion. 
+
+mi_diccionario = {"nombre": "Juan", "edad": 30, "carrera": "Datos"}
+print(mi_diccionario ["nombre"]) # Juan  
+
+mi_diccionario["edad"] = 31 # Modificar el valor de la clave "edad"
+mi_diccionario["materia"] = "Python" # Agregar una nueva clave-valor
+print(mi_diccionario)
+
+
+mi_diccionario.pop("carrera") # Eliminar la clave "carrera"
+mi_diccionario["edad"] # Modificar el valor de la clave "materia"
+print(mi_diccionario) # {'nombre': 'Juan', 'edad': 31, 'materia': 'Python'}
+
+print(mi_diccionario.keys()) # Obtener todas las claves del diccionario
+print(mi_diccionario.values()) # Obtener todos los valores del diccionario  
+print(mi_diccionario.items()) # Obtener todas las claves y valores del diccionario como tuplas 
+
+for clave, valor in mi_diccionario.items(): # Iterar sobre las claves y valores del diccionario
+    print(clave, ":", valor) # LOS ":" ES PARA ENCOTATENAR LOS DATOS Y TAMBIEN SEPARA LA CLAVE VALOR 
+# nombre : Juan
+# edad : 31 
+
