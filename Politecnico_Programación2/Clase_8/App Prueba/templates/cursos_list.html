@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Cursos{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between mb-3">
+  <h2 class="mb-0">Cursos</h2>
+  <a class="btn btn-primary" href="{{ url_for('cursos_nuevo') }}">Nuevo curso</a>
+</div>
+
+<form class="row g-2 mb-3" method="get">
+  <div class="col-auto">
+    <input class="form-control" name="q" placeholder="Buscar por título" value="{{ q or '' }}">
+  </div>
+  <div class="col-auto">
+    <button class="btn btn-outline-secondary">Buscar</button>
+  </div>
+</form>
+
+{% if cursos %}
+  <div class="list-group shadow-sm">
+  {% for c in cursos %}
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <div class="fw-semibold">{{ c.titulo }}</div>
+        <div class="text-muted small">{{ c.descripcion or 'Sin descripción' }}</div>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="badge text-bg-light border">$ {{ '%.2f'|format(c.precio) }}</span>
+        <a class="btn btn-sm btn-outline-primary" href="{{ url_for('cursos_editar', curso_id=c.id) }}">Editar</a>
+        <form method="post" action="{{ url_for('cursos_eliminar', curso_id=c.id) }}" onsubmit="return confirm('¿Eliminar curso?');">
+          <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+        </form>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+{% else %}
+  <div class="alert alert-info">No hay cursos cargados.</div>
+{% endif %}
+{% endblock %}

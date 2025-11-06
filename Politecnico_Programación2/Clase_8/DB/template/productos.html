@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        table, th, td {border-collapse: collapse; width: 50%; margin: auto;}
+        th, td {border: 1px solid #999; padding: 8px; text-align: center;}
+        th { background-color: white;}
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Productos en base de datos</h2>
+    <table>
+        <tr><th>ID</th><th>Nombre</th><th>Precio</th></tr>
+        {% for producto in productos %}
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.nombre }}</td>
+            <td>{{ "%.2f | format(p.precio) }}</td>
+        </tr>
+        {% endfor %}
+    </table> 
+</body> 
+</html>

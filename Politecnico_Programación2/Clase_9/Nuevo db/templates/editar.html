@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block titulo %}Editar Estudiante{% endblock %}
+{% block contenido %}
+<h2 class="mb-4">✏️ Editar Estudiante</h2>
+<form method="post" class="row g-3">
+    <div class="col-md-6">
+        <label class="form-label">Nombre</label>
+        <input type="text" name="nombre" class="form-control" value="{{ estudiante.nombre }}" required>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Correo</label>
+        <input type="email" name="correo" class="form-control" value="{{ estudiante.correo }}" required>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancelar</a>
+    </div>
+</form>
+{% endblock %}

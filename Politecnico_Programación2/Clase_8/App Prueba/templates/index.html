@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="text-center">
+  <h1 class="display-5 mb-3">CRUD de Cursos</h1>
+  <p class="lead mb-4">Ejemplo básico con login (contraseñas hasheadas), SQLite y SQLAlchemy.</p>
+  {% if current_user.is_authenticated %}
+    <a class="btn btn-primary" href="{{ url_for('cursos_list') }}">Ir al listado</a>
+  {% else %}
+    <a class="btn btn-primary me-2" href="{{ url_for('login') }}">Iniciar sesión</a>
+    <a class="btn btn-outline-secondary" href="{{ url_for('register') }}">Registrarme</a>
+  {% endif %}
+</div>
+{% endblock %}

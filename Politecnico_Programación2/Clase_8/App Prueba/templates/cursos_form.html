@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set titulo_pagina = "Nuevo curso" if modo == "nuevo" else "Editar curso" %}
+{% block title %}{{ titulo_pagina }}{% endblock %}
+
+{% block content %}
+<h2 class="mb-3">{{ titulo_pagina }}</h2>
+<form method="post" class="card card-body shadow-sm">
+  <div class="mb-3">
+    <label class="form-label">Título</label>
+    <input name="titulo" class="form-control"
+           value="{{ (curso.titulo if curso else '') | trim }}" required maxlength="120">
+    <div class="form-text">Hasta 120 caracteres.</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Descripción</label>
+    <textarea name="descripcion" class="form-control" rows="3">{{ (curso.descripcion if curso else '') | trim }}</textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Precio</label>
+    <input name="precio" type="number" step="0.01" min="0"
+           class="form-control" value="{{ curso.precio if curso else '0.00' }}" required>
+  </div>
+  <div class="d-flex gap-2">
+    <button class="btn btn-primary">Guardar</button>
+    <a class="btn btn-outline-secondary" href="{{ url_for('cursos_list') }}">Cancelar</a>
+  </div>
+</form>
+{% endblock %}

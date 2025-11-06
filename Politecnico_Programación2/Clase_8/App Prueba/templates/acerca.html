@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Acerca{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="mb-3">Acerca de esta app</h2>
+        <p>Esta aplicación de ejemplo muestra un CRUD simple de cursos usando:</p>
+        <ul>
+          <li>Flask 3</li>
+          <li>SQLite (archivo <code>instance/app.db</code>)</li>
+          <li>SQLAlchemy para ORM</li>
+          <li>Flask-Login para autenticación</li>
+          <li>Jinja2 para plantillas</li>
+          <li>Bootstrap 5 para una interfaz agradable</li>
+        </ul>
+        <p>Usuario de prueba: <strong>politecnico / malvinas</strong></p>
+        <p>Autor: <em>CG Consulting</em></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

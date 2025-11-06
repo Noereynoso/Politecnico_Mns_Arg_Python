@@ -1,0 +1,6 @@
+/* toque suave visual */
+body { background: #f7f8fa; }
+.navbar { background: #fff !important; }
+.card { border-radius: 12px; }
+.btn { border-radius: 10px; }
+.list-group-item { border: none; border-bottom: 1px solid #eee; }
